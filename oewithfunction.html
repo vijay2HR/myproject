@@ -18,7 +18,7 @@
          <td>number2</td>
          <td><input type="text" id="num2"></td>
      </tr-->
-     <tr><td><button type="button" class="btn btn-success"onclick="addnumbers();">ADD</button></td></tr>
+     <tr><td><button type="button" class="btn btn-success"onclick="oddoreven();">ADD</button></td></tr>
 <tr>
     <td></td>
     <p id="result"></p></td>
@@ -30,7 +30,7 @@
 <script>
     function oddoreven()
     {
-        var x=parseInt(document.getElementById("num1").val);
+        var x=parseInt(document.getElementById("num1").value);
         if(x%2==0)
         {
             var z="number is even";
