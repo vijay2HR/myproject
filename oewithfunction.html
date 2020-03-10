@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><form>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-2"></div>
+            <div class="col col-12 col-sm-8">
+     <table class="table"><tr>
+         <td>number1</td>
+         <td><input type="text" id="num1"></td>
+     </tr>
+     <!--tr>
+         <td>number2</td>
+         <td><input type="text" id="num2"></td>
+     </tr-->
+     <tr><td><button type="button" class="btn btn-success"onclick="addnumbers();">ADD</button></td></tr>
+<tr>
+    <td></td>
+    <p id="result"></p></td>
+</tr>
+</table>
+</div>
+
+</form>
+<script>
+    function oddoreven()
+    {
+        var x=parseInt(document.getElementById("num1").val);
+        if(x%2==0)
+        {
+            var z="number is even";
+            console.log(z)
+        }
+        else{
+            var z="number is odd";
+            console.log(z) 
+        }
+        document.getElementById("result").innerHTML=z;
+    }
+</script>
+
+    
+</body>
+</html>
